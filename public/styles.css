@@ -1,0 +1,21 @@
+html {
+  font-size: 20px;
+}
+
+.main {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote {
+  margin-top: 0.5em;
+}
+
+.quote > span:first-child {
+  font-weight: bold
+}
+
+.quote > span:first-child:after {
+  content:':'
+}
