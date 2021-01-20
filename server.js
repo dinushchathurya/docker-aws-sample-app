@@ -4,10 +4,10 @@ const bodyParser = require('body-parser')
 const MongoClient = require('mongodb').MongoClient
 
 var db
-
-MongoClient.connect('<your-connection-string>', (err, database) => {
+ 
+MongoClient.connect('mongodb://admin:password@localhost:27017', (err, database) => {
   if (err) return console.log(err)
-  db = database.db('star-wars-quotes')
+  db = database.db('todo')
   app.listen(process.env.PORT || 3000, () => {
     console.log('listening on 3000')
   })
